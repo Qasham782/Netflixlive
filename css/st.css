@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+.navbar-brand>img {
+    height: 8vh;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+}
+
+.navbar {
+    z-index: 1;
+    position: relative;
+}
+
+.navbar-nav {
+    padding-right: 8rem;
+}
+
+.nav-item {
+    margin-right: 0rem;
+    margin-right: 2rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: white !important;
+    letter-spacing: 1px;
+    transition: all ease-in-out 1s;
+}
+
+.navbar-toggler.custom-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-toggler.custom-toggler .fas {
+    color: red; /* Set your color here */
+  }
+.navbar-nav .nav-link:hover {
+    color: red !important;
+}
+.active{
+    color: red !important;
+}
+.nav-img>img {
+    height: 3vh;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0)),
+        url('../img/st2.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.heading .main{
+    padding-right: 14rem;
+    height: 10rem;
+}
+
+.heading p {
+    color: white;
+    font-size: 1rem;
+    width: 40%;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.heading h4 {
+    color: white;
+    font-size: 1rem;
+    width: 40%;
+    text-align: left;
+}
+.trailers .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding-left: 2rem;
+
+}
+.trailers .imgs>img{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+}
+.trailers .imgs{
+    margin-left: 1rem;
+}
+.trailers .imgs:hover {
+    transform: scale(1.4);
+    transition: all ease-in-out 1s;
+
+}
+@media screen and (max-width:950px) {
+
+    
+    
+    .heading h1 {
+        font-size: 6rem;
+        padding-right: 0rem;
+    }
+    .heading p {
+        width: 60%;
+    }
+    .heading h4 {
+        width: 60%;
+    }
+    .trailers .imgs>img{
+        height:90px;
+    }
+}
+
+@media screen and (max-width:790px) {
+
+    header {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+            url('../img/st2.jpg');
+        background-position: bottom;
+        background-size: cover;
+    }
+    
+
+    .heading {
+        padding: 5em;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    .heading .main{
+        padding-right: 0rem;
+        height: 10rem;
+    }
+    
+    
+    .heading p {
+        text-align: center;
+        width: 80%;
+    }
+    
+    .heading h4 {
+        width: 80%;
+        text-align: center;
+    }
+    .trailers .imgs>img{
+        height:90px;
+    }
+    .trailers .content{
+        width: 100%;
+        padding-left: 0rem;
+    
+    }
+}
+@media screen and (max-width:580px) {
+
+   
+    .heading h1 {
+        letter-spacing: 20px;
+        text-align: center;
+    }
+    
+    .heading p {
+        text-align: center;
+        width: 90%;
+    }
+    
+    .heading h4 {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .trailers .content{
+        width: 90%;
+        padding-left: 0rem;
+        margin: 0 auto;
+    
+    }
+}
+@media screen and (max-width:490px) {
+
+   
+    .heading h1 {
+        letter-spacing: 10px;
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    .heading p {
+        text-align: center;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    
+    .heading h4 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .trailers .content{
+        width: 90%;
+        padding-left: 0rem;
+        margin: 0 auto;
+    
+    }
+    .trailers .imgs>img{
+        height:80px;
+    }
+}

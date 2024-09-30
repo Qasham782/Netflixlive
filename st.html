@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/st.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Netflix</title>
+    <link rel="icon" href="./img/Netflix-logo-red-black-png-removebg-preview.png">
+</head>
+<script>
+    let audio;
+    function initAudio() {
+        audio = new Audio('./music/st.mp3');
+        audio.loop = true;
+        audio.volume = 1.0;
+    }
+    function playAudio() {
+        if (audio) {
+            audio.play().catch((error) => {
+                console.error('Error playing audio on button click:', error);
+            });
+        }
+    }
+    window.onload = function () {
+        initAudio();
+        document.getElementById('playButton').click();
+    };
+</script>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-* bg-* text-uppercase">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/Netflix-logo-red-black-png-removebg-preview.png"
+                        alt=""></a>
+                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Page2.html">Get Started</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./st.html">shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ben.html" tabindex="-1" aria-disabled="true">Cartoons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-img" href="#" tabindex="-1" aria-disabled="true"><img
+                                    src="./img/search-icon-2044x2048-psdrpqwp.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="heading">
+            <img src="./img/stlogo.png" alt="" class="main">
+            <p>In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As
+                they search for answers, the children unravel a series of extraordinary mysteries.</p>
+            <h4>2016-2025 - Horror/Fantasy<br> <br>
+                <img id="playButton" src="./img/pngtree-red-play-button-clipart-png-image_8968161.png" alt=""
+                    style="height: 5vh; cursor: pointer;" onclick="playAudio()">
+                &nbsp;Click to play Intro
+            </h4>
+
+            </h4>
+
+        </div>
+
+        <div class="trailers">
+            <div class="content">
+                <div class="imgs">
+                    <img src="./img/st3.jpg" alt="">
+
+                </div>
+                <div class="imgs">
+                    <img src="./img/st.jpg" alt="">
+
+                </div>
+                <div class="imgs">
+                    <img src="./img/st4.jpg" alt="">
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
